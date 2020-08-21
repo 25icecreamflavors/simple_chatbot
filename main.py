@@ -7,9 +7,8 @@ import avatar
 
 with open("token.txt", "r") as file:
     token = file.read()
-with open("proxy.txt", "r") as file:
-    telebot.apihelper.proxy = file.read()
-bot = telebot.TeleBot(token=token)
+
+bot = telebot.TeleBot(token)
 lyrics = ["Выгляди эффективным."]
 
 
